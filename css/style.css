@@ -1,0 +1,41 @@
+/* Start Padding and Margin */
+.p-0 {
+    padding: 0;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+/* End Padding and Margin */
+/* Start Colors and Background */
+.bg-cbbebd {
+    background-color: #cbbebd;
+}
+/* End Colors and Background */
+/* Start Align */
+.txt-c {
+    text-align: center;
+}
+/* End Align */
+textarea {
+    resize: none;
+}
+div.op {
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    padding: 5px;
+}
+.yellow {
+    color: rgb(255, 166, 1);
+}
+.green {
+    color: rgb(0, 148, 0);
+}
+.red {
+    color: red;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Application</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="form">
+        <div class="container">
+            <fieldset>
+                <legend>From Application</legend>
+                <form action="" onsubmit="return vform(), validateMail(), validateFile();">
+                    <div class="container">
+                        <div class="row mt-3 justify-content-between">
+                            <input type="text" id="f-n" class="col-12 col-md-5 mt-3 mt-md-0 p-1 p-md-1"
+                                placeholder="First Name" required  onkeyup="return lastName();">
+                            <input type="text" id="l-n" class="col-12 col-md-5 mt-2 mt-md-0 p-1 p-md-1"
+                                placeholder="Last Name" required disabled>
+                        </div>
+                        <div class="row mt-3">
+                            <input type="password" id="pass" class="col-12 col-lg-8 mt-1 mt-md-0 p-1 p-md-1"
+                                placeholder="Password" required onkeyup="passW()">
+                            <div class="col-lg-2 op p-2 p-lg-0" id="show">Password</div>
+                            <button type="button" class="col-lg-2
+                            p-2 p-lg-0" id="icon" style="padding: 0;">Show Password</button>
+                        </div>
+                        <div class="row mt-3">
+                            <input type="email" id="e-mail" class="col-12 mt-1 mt-md-0 p-1 p-md-1" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="row mt-3 justify-content-between">
+                            <input type="number" class="col-12 col-md-5 mt-0 mb-2 mt-md-0  mb-md-0 p-1 p-md-1"
+                                placeholder="Age" required id="age">
+                            <select name="country" class="col-12 col-md-5 mt-2 mt-md-0 p-1 p-md-1" placeholder="You Country"
+                                required>
+                                <option value="1" selected>Egypt</option>
+                                <option value="2">USA</option>
+                                <option value="3">KSA</option>
+                                <option value="4">UK</option>
+                                <option value="5">China</option>
+                                <option value="6">Iraq</option>
+                            </select>
+                        </div>
+                        <div class="row mt-3 justify-content-between">
+                            <div class="col-12 col-md-5 mt-3 mt-md-0 p-1 bg-cbbebd txt-c">Upload Your CV</div>
+                            <input type="file" id="vfile" class="col-12 col-md-5 mt-3 mt-md-0 p-1" value="Choose File">
+                        </div>
+                        <div class="row mt-3">
+                            <textarea rows="13" class="col-12" id="text-messege" placeholder="Your Messege ..."></textarea>
+                        </div>
+                        <div class="row mt-4 mb-1 justify-content-between">
+                            <input type="reset" class="col-12 col-md-5 mt-3 mt-md-0 mt-3 mt-md-0 p-3">
+                            <input type="submit" class="col-12 col-md-5 mt-3 mt-md-0 mt-3 mt-md-0 p-3">
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.6.2.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
